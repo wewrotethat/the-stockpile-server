@@ -1,8 +1,9 @@
 type User struct {
-	ID       uint
-	UserName string
-	FullName string 
-	Email    string 
-	Phone    string 
-	Password string 
+	ID       uint `json:"id"`
+	UserName string `json:"userName"`
+	FullName string  `json:"fullName"`
+	Email    string `json:"email"`
+	Phone    string  `json:"phone"`
+	Password string  `json:"-"`
 }
+
